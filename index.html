@@ -14,12 +14,23 @@
     <!--NAV-->
     <nav class="navbar navbar-light bg-light navbar-expand-sm">
         <a href="/" class="navbar-brand">whisky drop</a>
-        <ul class="navbar-nav mr-auto">
-            <li class="active nav-item mr-2"><a href="/" class="nav-link">home</a></li>
-            <li class="nav-item mr-2"><a href="/about" class="nav-link">about</a></li>
-            <li class="nav-item mr-2 d-block d-sm-none"><a href="/login" class="nav-link">sign in / sign up</a></li>
-        </ul>
-
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Togglenavigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+                <li class="active nav-item mr-2"><a href="/" class="nav-link">home</a></li>
+                <li class="nav-item mr-2"><a href="/about" class="nav-link">about</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarNavDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Whiskys</a>
+                    <div class="dropdown-menu" aria-lebelledby="navbarNavDropdownMenuLink">
+                        <a href="#" class="dropdown-item">Irish</a>
+                        <a href="#" class="dropdown-item">Scotch</a>
+                        <a href="#" class="dropdown-item">Japanese</a>
+                        <a href="#" class="dropdown-item">American</a>
+                    </div>
+                </li>
+                <li class="nav-item mr-2 d-block d-sm-none"><a href="/login" class="nav-link">sign in / sign up</a></li>
+            </ul>
+        </div>
         <div class="d-none d-md-block">
             <p class="navbar-text my-auto mr-2"><i>great whisky to your door</i></p>
             <a href="/login">sign in / sign up</a>
