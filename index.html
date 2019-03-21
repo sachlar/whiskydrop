@@ -7,63 +7,73 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>whisky drop</title>
 </head>
 
 <body>
     <!--NAV-->
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
-        <a href="/" class="navbar-brand">whisky drop</a>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Togglenavigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mr-auto">
-                <li class="active nav-item mr-2"><a href="/" class="nav-link">home</a></li>
-                <li class="nav-item mr-2"><a href="/about" class="nav-link">about</a></li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="navbarNavDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Whiskys</a>
-                    <div class="dropdown-menu" aria-lebelledby="navbarNavDropdownMenuLink">
-                        <a href="#" class="dropdown-item">Irish</a>
-                        <a href="#" class="dropdown-item">Scotch</a>
-                        <a href="#" class="dropdown-item">Japanese</a>
-                        <a href="#" class="dropdown-item">American</a>
-                    </div>
-                </li>
-                <li class="nav-item mr-2 d-block d-sm-none"><a href="/login" class="nav-link">sign in / sign up</a></li>
-            </ul>
-        </div>
-        <div class="d-none d-md-block">
-            <p class="navbar-text my-auto mr-2"><i>great whisky to your door</i></p>
-            <a href="/login">sign in / sign up</a>
-        </div>
-    </nav>
-    <!--END OF NAV-->
-    <article class="container mt-3">
-        <div class="row d-none d-sm-block">
-            <div class="col-12">
-                <div class="alert alert-warning">
-                    <strong>Sale Now On</strong>We have a sale on. Get your 12 month subscription for the cost of 6
-                    <a href="">See here for details</a>
-                </div>
+    <div class="container-fluid navalert-container">
+        <nav class="navbar navbar-dark navbar-expand-sm">
+            <a href="/" class="navbar-brand">whisky drop</a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Togglenavigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="active nav-item mr-2"><a href="/" class="nav-link">home</a></li>
+                    <li class="nav-item mr-2"><a href="/about" class="nav-link">about</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarNavDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Whiskys</a>
+                        <div class="dropdown-menu" aria-lebelledby="navbarNavDropdownMenuLink">
+                            <a href="#" class="dropdown-item">Irish</a>
+                            <a href="#" class="dropdown-item">Scotch</a>
+                            <a href="#" class="dropdown-item">Japanese</a>
+                            <a href="#" class="dropdown-item">American</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-2 d-block d-sm-none"><a href="/login" class="nav-link">sign in / sign up</a></li>
+                </ul>
             </div>
-        </div>
+            <div class="d-none d-md-block">
+                <p class="navbar-text my-auto mr-2"><i>great whisky to your door</i></p>
+                <a href="/login" class="btn btn--cta btn--red">sign in / sign up</a>
+            </div>
+        </nav>
+    </div>
+    <!--END OF NAV-->
+    <!--<div class="container alert-container">-->
+    <!--    <div class="row d-none d-sm-block">-->
+    <!--        <div class="col-12">-->
+    <!--            <div class="alert alert-warning">-->
+    <!--                <strong>Sale Now On</strong>We have a sale on. Get your 12 month subscription for the cost of 6-->
+    <!--                <a href="">See here for details</a>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <div class="container-fluid callout-container">
         <!-- call out -->
+        <div class="opaque-overlay">&nbsp;</div>
         <div class="row">
             <div class="col-12">
                 <section class="callout jumbotron text-center">
-                    <h1>the best whisky straight to your door</h1>
+                    <h1 class="jumbotron-header">the best whisky straight to your door</h1>
+                    <hr class="block-divider block-divider--orange"></hr>
                     <p class="lead">sign up today to start receiving yours today. <s class="d-none d-sm-inline">£19.99 </s><span class="d-inline d-sm-none"></span><strong><mark>first one is free!</mark></strong></p>
-                    <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">sign up</button>
+                    <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">sign up</button>
                     <p class="text-muted"><small>you must be over 18, please drink responsibly</small></p>
                 </section>
             </div>
         </div>
         <!-- end of call out -->
-        <hr>
-        <!-- quotes -->
+    </div>
+    <!-- quotes -->
+    <div class="container quotes-container">
         <section class="quotes">
             <div class="row">
-                <div class="col-12 my-5">
+                <div class="col-12 page-header">
                     <h2 class="text-uppercase">quotes: </h2>
+                    <hr class="block-divider block-divider--short">
                 </div>
             </div>
             <div class="row">
@@ -95,12 +105,14 @@
                 </div>
             </div>
         </section>
-        <!-- end of quotes -->
-        <hr>
-        <!-- features -->
+    </div>
+    <!-- end of quotes -->
+
+    <!-- features -->
+    <div class="container features-container">
         <section class="features">
             <div class="row">
-                <div class="col-12 my-5">
+                <div class="col-12 page-header">
                     <h2 class="text-uppercase">features: </h2>
                 </div>
             </div>
@@ -133,7 +145,17 @@
 
             </div>
         </section>
+    </div>
+    <!-- end of features -->
+
+    <!-- monthly favourites -->
+    <div class="container monthly-favourites-container">
         <section class="monthly-favourites">
+            <div class="row">
+                <div class="col-12 my-5">
+                    <h2 class="text-uppercase">favourites: </h2>
+                </div>
+            </div>
             <table class="table">
                 <thead>
                     <th scope="col">name</th>
@@ -163,7 +185,10 @@
                 </tbody>
             </table>
         </section>
-    </article>
+    </div>
+    <!-- end of monthly favourites -->
+
+    <!-- modal sign up -->
     <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -194,9 +219,13 @@
             </div>
         </div>
     </div>
+    <!-- end of modal sign up -->
+
+    <!-- scripts start here -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- end of scripts -->
 </body>
 
 </html>
